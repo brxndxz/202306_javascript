@@ -1,0 +1,16 @@
+.container{
+    height: 120px;
+    width: 320px;
+    border: black 2px solid;
+}
+.c1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+button{
+    background-color: rgb(247, 239, 131);
+    box-shadow: 2px 2px;
+}

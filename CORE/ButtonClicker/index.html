@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Evento OnClick</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h1>Dojonary</h1>
+            <div id="search">
+                <form action="../../form-result.php" method="post" target="_blank">
+                    <input type="search" name="buscar" placeholder="Search">
+                </form>
+            </div>
+            <button onclick="logOut(this)" class="btnlog">Login</button>
+        </div>
+        <div class="contenedor">
+            <div class="column1">
+                <div class="cuadro">
+                    <div class="c1">
+                        <h2>ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="btn2" onclick="alert('Ninja was liked')">13 likes</button>
+                    </div>
+                    <div class="c2">
+                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">Ninjutsu</a></p>
+                    </div>
+                </div>
+                <div class="cuadro">
+                    <div class="c1">
+                        <h2>ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="btn2" onclick="alert('Ninja was liked')">37 likes</button>
+                    </div>
+                    <div class="c2">
+                        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columna2">
+                <div class="cuadro2">
+                    <h3>Dojonary is <br> definet by YOU</h3>
+                    <button id="btn" onclick="hide(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function logOut(element) {
+            element.innerText = "Log out";
+        }
+        function hide(element) {
+            element.remove();
+        }
+    </script>
+</body>
+</html>
