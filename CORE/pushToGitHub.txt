@@ -1,0 +1,12 @@
+Para subir archivos por primera vez:
+git init 
+git add .
+git commit -m "mensaje"
+git remote add origin https://github.com/usuario_github/nombre_repositorio.git
+git branch -M main
+git push -u origin main
+
+Para actualizar el repositorio:
+git add .
+git commit -m "mensaje"
+git push
